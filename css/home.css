@@ -436,15 +436,11 @@ body{
 .purchase-box {
     width: 350px;
     padding: 8px;
-
     color: white;
     background: #0c0c0c;
-
     border: 2px solid #353aa8;
     border-radius: 20px;
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.28);
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.28);
 }
 
 
@@ -452,7 +448,7 @@ body{
 
 .purchase-info {
     display: grid;
-    grid-template-columns: 88px minmax(0, 1fr) 57px;
+    grid-template-columns: 105px minmax(0, 1fr) 64px;
     align-items: center;
     gap: 8px;
 
