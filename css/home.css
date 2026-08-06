@@ -430,3 +430,13 @@ body{
         align-items: center;
         padding: 30px 40px;
     }
+
+    .buy-container-top{
+        background-color: #131313;
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+    }
+
+    .buy-container-top .container-text {
+        color:white;
+    }
