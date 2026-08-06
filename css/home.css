@@ -1,0 +1,432 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background: #131313;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ======sidebar====== */
+.sidebar {
+    background:#131313;
+    width: 15rem;
+    height: 100%;
+    position: fixed;
+    padding: 24px 12px;
+    border-right: 1px solid grey;
+    z-index: 1000;
+}
+
+.sidebar .img-logo img{
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.contant{
+    width: auto;
+    height: 72px;
+    background: white;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+.sidebar-line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.10) 12%,
+    rgba(255, 255, 255, 0.10) 88%,
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.03);
+}
+
+.sidebar .title{
+    color:grey;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.navbar-nav .nav-item {
+    border: 1px solid grey;
+    background-color: #ffffff0d;
+    border-radius: 8px;
+    padding: 12px 8px;
+    margin-bottom: 8px;
+    display: flex;
+    width:auto;
+    height: auto;
+}
+
+.navbar-nav .nav-item img {
+    width: 20px;
+    height: auto;
+    margin: 0px 8px;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+/* ======top-section====== */
+.top-section{
+    position: fixed;
+    left: 15rem;
+    right: 0;
+    width: auto;
+    height: 85px;
+    border-bottom: 1px solid grey;
+    display: flex ;
+    align-items: center;
+    padding: 16px;
+    justify-content: space-between;
+    background: #131313;
+    z-index: 900;
+}
+
+.top-section .humbeger img{
+    width: 24px;
+    height: auto;
+    margin: 0px 8px;
+}
+
+.top-section .btn{
+    justify-content: center;
+    display: flex;
+}
+
+.top-section .btn button {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  width: auto;
+  height: 48px;
+  margin-right: 8px;
+  padding: 10px;
+
+}
+
+.top-section .btn img{
+    width: 24px;
+    height: auto;
+
+}
+
+.btn a{
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 12px;
+
+}
+
+/* ======top-content====== */
+
+.top-content{
+    position: absolute;
+    top:98px;
+    margin-left: 15rem;
+    width: calc(100% - 15rem);
+    height: 135px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    margin-top: 12px;
+    justify-content: center;
+    z-index: 800;
+}
+
+.top-content .starter-content{
+    width: 304px;
+    height: 135px;
+    gap:6px;
+    display: grid;
+    flex-direction: column;
+    background: linear-gradient(rgb(252 110 110) 0%, rgb(155 42 42) 50%, rgb(77 20 20) 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 2px inset;
+} 
+
+
+.top-content .silver-content{
+    width: 304px;
+    height: 135px;
+    gap:6px;
+    display: grid;
+    flex-direction: column;
+    background: linear-gradient(rgb(62, 123, 214) 0%, rgb(43, 86, 150) 50%, rgb(25, 49, 86) 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 2px inset;
+} 
+
+.top-content .gold-content{
+    width: 304px;
+    height: 135px;
+    gap:6px;
+    display: grid;
+    flex-direction: column;
+    background: linear-gradient(rgb(201, 162, 39) 0%, rgb(141, 113, 27) 50%, rgb(80, 65, 16) 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 2px inset;
+} 
+
+.top-content .diamond-content{
+    width: 304px;
+    height: 135px;
+    gap:6px;
+    display: grid;
+    flex-direction: column;
+    background: linear-gradient(rgb(91, 46, 255) 0%, rgb(64, 32, 179) 50%, rgb(36, 18, 102) 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 2px inset;
+} 
+
+
+
+.title-description{
+    color: white;
+    font-weight: 900;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-top: 14px;
+    height: 78px;
+}
+
+.description p{
+    color: white;
+    font-weight: 900;
+}
+
+.description p span{
+    color: #e9e9e98f;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.price{
+    align-items: flex-end;
+    padding-right: 72px;
+    background: #fff3;
+    height: 60px;
+    padding-top: 4px;
+}
+
+.price span{
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.price .title{
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.price .description{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.starter-content .starter-image img{
+    position: relative;
+    width: 80px;
+    top: -130px;
+    left: -10px;
+}
+
+.silver-content .silver-image img{
+    position: relative;
+    width: 80px;
+    top: -130px;
+    left: -10px;
+}
+
+.gold-content .gold-image img{
+    position: relative;
+    width: 80px;
+    top: -130px;
+    left: -10px;
+}
+
+.diamond-content .diamond-image img{
+    position: relative;
+    width: 80px;
+    top: -130px;
+    left: -10px;
+}
+
+.starter-image-right img{
+    position: relative;
+    left: 239px;
+    z-index: 5;
+    width: auto;
+    height: 104px;
+    object-fit: contain;
+    transform: rotate(348deg);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.35));
+    pointer-events: none;
+    bottom: 274px;
+    overflow: hidden;
+}
+
+.silver-image-right img{
+    position: relative;
+    left: 239px;
+    z-index: 5;
+    width: auto;
+    height: 104px;
+    object-fit: contain;
+    transform: rotate(348deg);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.35));
+    pointer-events: none;
+    bottom: 274px;
+    overflow: hidden;
+}
+
+.gold-image-right img{
+    position: relative;
+    left: 239px;
+    z-index: 5;
+    width: auto;
+    height: 104px;
+    object-fit: contain;
+    transform: rotate(348deg);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.35));
+    pointer-events: none;
+    bottom: 274px;
+    overflow: hidden;
+}
+
+.diamond-image-right img{
+    position: relative;
+    left: 239px;
+    z-index: 5;
+    width: auto;
+    height: 104px;
+    object-fit: contain;
+    transform: rotate(348deg);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.35));
+    pointer-events: none;
+    bottom: 274px;
+    overflow: hidden;
+}
+
+.background-video{
+    display: block;
+    position: absolute;
+    left: 15rem;
+    width: 100%;
+    height: calc(100vh + 150px);
+    margin-top: -50px;
+    background: white;
+    z-index: 700;
+}
+
+/* 中间卡包展示区域 */
+.flex-content {
+    width: calc(100% - 15rem);
+    left:15rem;
+    top: 244px;
+    height: 420px;
+    position: absolute;
+    z-index: 700;    
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    justify-content: center;
+    align-items: center;
+    column-gap: clamp(50px, 6vw, 94px);
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+/* 所有卡包按钮 */
+.flex-content .pack-item {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.flex-content .pack-item img {
+    width: 150px;
+    height: 280px;
+    display: block;
+    object-fit: contain;
+}
+
+.pack-item.active {
+    position: relative;
+    z-index: 3;
+    opacity: 1;
+    transform:
+        translateY(0)
+        scale(1.18);
+    filter:
+        drop-shadow(
+            0 18px 13px rgba(0, 0, 0, 0.2)
+        );
+}
+
+.pack-item.pack-near {
+    z-index: 2;
+    opacity: 0.28;
+    transform:
+        translateY(12px)
+        scale(0.93);
+    filter:
+        saturate(0.75);
+}
+
+.pack-item.pack-far {
+    z-index: 1;
+    opacity: 0.2;
+    transform:
+        translateY(14px)
+        scale(0.82);
+    filter:saturate(0.6);
+}
+
+.buy-container{
+        width: calc(100% - 15rem);
+        left: 15rem;
+        top: 244px;
+        height: 1000px;
+        position: absolute;
+        z-index: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 40px;
+    }
