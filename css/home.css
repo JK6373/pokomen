@@ -418,25 +418,352 @@ body{
     filter:saturate(0.6);
 }
 
-.buy-container{
-        width: calc(100% - 15rem);
-        left: 15rem;
-        top: 244px;
-        height: 1000px;
-        position: absolute;
-        z-index: 700;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 40px;
+.purchase-section {
+    position: absolute;
+    z-index: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 15rem);
+    margin-left: 15rem;
+    top: 650px;
+    padding: 30px 40px 60px;
+    height: auto;
+    min-height: 300px;
+}
+
+
+.purchase-box {
+    width: 350px;
+    padding: 8px;
+
+    color: white;
+    background: #0c0c0c;
+
+    border: 2px solid #353aa8;
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.28);
+}
+
+
+/* 上方资料区域 */
+
+.purchase-info {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr) 57px;
+    align-items: center;
+    gap: 8px;
+
+    min-height: 66px;
+}
+
+
+/* 卡片预览 */
+
+.card-preview {
+    position: relative;
+
+    width: 88px;
+    height: 68px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.card-preview img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* 产品说明 */
+
+.pack-description {
+    min-width: 0;
+}
+
+.pack-title {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    white-space: nowrap;
+}
+
+.pack-title .star {
+    color: #ffd84a;
+    font-size: 13px;
+}
+
+.pack-title strong {
+    color: #ffd84a;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.pack-title small {
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.pack-description p {
+    margin-top: 3px;
+
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.grade-s {
+    color: #ff8d2b;
+}
+
+.grade-ss {
+    color: #a668ff;
+}
+
+
+/* Go x5 */
+
+.go-five-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 53px;
+    height: 31px;
+    padding: 0 9px;
+
+    color: #111111;
+    background: white;
+
+    border: none;
+    border-radius: 18px;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.go-five-button:hover {
+    background: #ededed;
+}
+
+
+/* =========================================
+   PURCHASE CONTROLS
+========================================= */
+
+.purchase-controls {
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr);
+    gap: 8px;
+
+    margin-top: 6px;
+}
+
+
+/* 数量控制 */
+
+.quantity-control {
+    display: grid;
+    grid-template-columns: 38px 34px 38px;
+    align-items: center;
+
+    min-height: 50px;
+    padding: 4px;
+
+    background: #171717;
+
+    border: 1px solid #272727;
+    border-radius: 13px;
+}
+
+.quantity-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 40px;
+
+    color: #9a9a9a;
+    background: #1d1d1d;
+
+    border: 1px solid #292929;
+    border-radius: 8px;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.quantity-button:hover {
+    color: white;
+    background: #282828;
+}
+
+.quantity-value {
+    color: white;
+
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.quantity-plus {
+    color: white;
+
+    border-color: #555cff;
+
+    box-shadow:
+        inset 0 0 0 1px #ffd032,
+        0 0 0 1px rgba(85, 92, 255, 0.35);
+}
+
+
+/* 购买按钮 */
+
+.buy-button {
+    min-height: 50px;
+    padding: 0 18px;
+
+    color: #121212;
+    background: white;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.buy-button strong {
+    color: #63b74f;
+}
+
+.buy-button:hover {
+    background: #f0f0f0;
+}
+
+
+/* =========================================
+   GUARANTEE PANEL
+========================================= */
+
+.guarantee-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 380px;
+    min-height: 72px;
+    margin-top: 18px;
+
+    overflow: hidden;
+
+    color: #171717;
+    background: rgba(255, 255, 255, 0.84);
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+.guarantee-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    padding: 11px 8px;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.guarantee-item:last-child {
+    border-right: none;
+}
+
+.guarantee-label {
+    margin-bottom: 8px;
+
+    color: #777777;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.guarantee-value {
+    color: #111111;
+
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.psa-value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.psa-logo {
+    color: #245bac;
+
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .purchase-box {
+        width: calc(100% - 30px);
+        max-width: 350px;
     }
 
-    .buy-container-top{
-        background-color: #131313;
-        border-top-left-radius: 28px;
-        border-top-right-radius: 28px;
+    .purchase-info {
+        grid-template-columns: 72px minmax(0, 1fr) 52px;
     }
 
-    .buy-container-top .container-text {
-        color:white;
+    .card-preview {
+        width: 72px;
     }
+
+    .purchase-controls {
+        grid-template-columns: 108px minmax(0, 1fr);
+    }
+
+    .quantity-control {
+        grid-template-columns: 34px 32px 34px;
+    }
+
+    .quantity-button {
+        width: 34px;
+    }
+
+    .guarantee-panel {
+        width: calc(100% - 30px);
+        max-width: 380px;
+    }
+}
