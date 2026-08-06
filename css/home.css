@@ -431,7 +431,7 @@ body{
         padding: 30px 40px;
     }
 
-    .buy-container-top{
+    .buy-container .buy-container-top{
         background-color: #131313;
         border-top-left-radius: 28px;
         border-top-right-radius: 28px;
