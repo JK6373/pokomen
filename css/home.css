@@ -160,6 +160,7 @@ body{
 .main-content{
     width: calc(100% - 15rem);
     margin-left: 15rem;
+    position: absolute;
 }
 
 .pack-list{
